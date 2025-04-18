@@ -35,7 +35,7 @@ export function TodoItem({ todo }: TodoItemProps) {
       <div className={cn("flex gap-2")}>
         <Button
           onClick={toggleCompleted}
-          className={cn("text-sm text-green-900 font-bold border border-black", !todo.completed && "text-red-500")}
+          className={cn("text-sm text-green-900 font-bold border border-black", !todo.completed && "text-black")}
         >
           {todo.completed ? "완료" : "미완료"}
         </Button>
