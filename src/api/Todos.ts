@@ -11,7 +11,7 @@ export const getTodos = async () => {
     const data = await response.json();
     return data;
   } catch (error) {
-    throw new Error("Todo 목록을 가져오는데 실패했습니다.");
+    throw new Error(`Todo 목록을 가져오는데 실패했습니다. ${error instanceof Error ? error.message : error}`);
   }
 };
 
@@ -44,7 +44,7 @@ export const updateTodo = async (todo: Todo) => {
     const data = await response.json();
     return data;
   } catch (error) {
-    throw new Error("리스트 상태 변경 실패");
+    throw new Error(`리스트 상태 변경 실패 ${error instanceof Error ? error.message : error}`);
   }
 };
 
