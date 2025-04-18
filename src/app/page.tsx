@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div>test</div>;
+import MainLayout from "@/components/templates/MainLayout";
+
+export default function HomePage() {
+  return <MainLayout />;
 }
