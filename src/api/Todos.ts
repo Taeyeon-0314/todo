@@ -28,3 +28,22 @@ export const createTodo = async (title: string) => {
   }
   return response.json();
 };
+
+export const updateTodo = async (todo: Todo) => {
+  const response = await fetch(`${API_BASE_URL}/${todo.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(todo)
+  });
+  if (!response.ok) {
+    throw new Error("리스트 상태 변경 실패");
+  }
+  try {
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error("리스트 상태 변경 실패");
+  }
+};

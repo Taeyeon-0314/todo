@@ -3,11 +3,16 @@
     {
       "id": "1",
       "title": "첫 번째 할 일",
-      "completed": false
+      "completed": true
     },
     {
       "id": "6ec4",
       "title": "두 번째 할 일",
+      "completed": true
+    },
+    {
+      "id": "86ff",
+      "title": "ㅎㅇ",
       "completed": false
     }
   ]
