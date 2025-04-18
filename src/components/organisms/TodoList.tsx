@@ -28,12 +28,12 @@ export function TodoList({ filter }: Props) {
 
   if (!filteredTodos || filteredTodos.length === 0) {
     if (filter === "completion") {
-      return <div className={cn("p-4 text-gray-400")}>완료한 Todo가 없어요!</div>;
+      return <div className={cn("p-4 text-gray-400")}>완료된 Todo가 없어요!</div>;
     }
     if (filter === "notCompleted") {
-      return <div className={cn("p-4 text-gray-400")}>미완료한 Todo가 없어요!</div>;
+      return <div className={cn("p-4 text-gray-400")}>진행중인 Todo가 없어요!</div>;
     }
-    return <div className={cn("p-4 text-gray-400")}>리스트가 비어있어요!</div>;
+    return <div className={cn("p-4 text-gray-400")}>Todo 리스트가 비어있어요!</div>;
   }
 
   return (
