@@ -1,4 +1,3 @@
-// src/components/organisms/TodoList.tsx
 "use client";
 
 import { useTodos } from "@/hooks/useTodos";
