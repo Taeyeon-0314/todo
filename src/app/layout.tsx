@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TODO LIST",
-  description: "TODO LIST"
+  description: "해야할 일을 추가 하고 완료 여부를 확인할 수 있는 사이트입니다."
 };
 
 export default function RootLayout({
