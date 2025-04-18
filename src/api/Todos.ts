@@ -47,3 +47,12 @@ export const updateTodo = async (todo: Todo) => {
     throw new Error("리스트 상태 변경 실패");
   }
 };
+
+export const deleteTodo = async (id: string) => {
+  const response = await fetch(`${API_BASE_URL}/${id}`, {
+    method: "DELETE"
+  });
+  if (!response.ok) {
+    throw new Error("리스트 삭제 실패");
+  }
+};
