@@ -1,11 +1,17 @@
 import { Todo } from "@/types/todo";
 import { cn } from "@/utils/cn/util";
+import { Button } from "../atoms/Button";
+import { useUpdateTodo } from "@/hooks/useUpdateTodo";
 
 interface TodoItemProps {
   todo: Todo;
 }
 
 export function TodoItem({ todo }: TodoItemProps) {
+  const { mutate: updateTodo } = useUpdateTodo();
+  const toggleCompleted = () => {
+    updateTodo({ ...todo, completed: !todo.completed });
+  };
   return (
     <li
       className={cn(
@@ -14,9 +20,12 @@ export function TodoItem({ todo }: TodoItemProps) {
       )}
     >
       <span className="text-lg">{todo.title}</span>
-      <span className={cn("text-sm text-gray-500", !todo.completed && "text-red-500")}>
+      <Button
+        onClick={toggleCompleted}
+        className={cn("text-sm text-green-900 font-bold border border-black", !todo.completed && "text-red-500")}
+      >
         {todo.completed ? "완료" : "미완료"}
-      </span>
+      </Button>
     </li>
   );
 }
