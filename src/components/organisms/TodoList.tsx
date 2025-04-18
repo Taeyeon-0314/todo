@@ -4,6 +4,7 @@ import { useTodos } from "@/hooks/useTodos";
 import { TodoItem } from "@/components/molecules/TodoItem";
 import { cn } from "@/utils/cn/util";
 import { Todo } from "@/types/todo";
+import { Spinner } from "../atoms/Spinner";
 
 type Props = {
   filter: "all" | "completion" | "notCompleted";
@@ -13,7 +14,11 @@ export function TodoList({ filter }: Props) {
   const { data: todos, isLoading, isError } = useTodos();
 
   if (isLoading) {
-    return <div className={cn("p-4 text-gray-500")}>로딩 중...</div>;
+    return (
+      <div className="flex justify-center py-6">
+        <Spinner className="w-16 h-16" />
+      </div>
+    );
   }
 
   if (isError) {
