@@ -1460,7 +1460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^5.3.0":
+"chalk@npm:^5.3.0, chalk@npm:^5.4.1":
   version: 5.4.1
   resolution: "chalk@npm:5.4.1"
   checksum: 10c0/b23e88132c702f4855ca6d25cb5538b1114343e41472d5263ee8a37cccfccd9c4216d111e1097c6a27830407a1dc81fecdf2a56f2c63033d4dbbd88c10b0dcef
@@ -1480,6 +1480,13 @@ __metadata:
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
   checksum: 10c0/9d6cfd0c19e1c96a434605added99dff48482152af791ec4172fb912a71cff9027ff174efd8cdb2160cc7f377543e0537ffc462d4f279bc4701de3f2a3c4b358
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
   languageName: node
   linkType: hard
 
@@ -1548,6 +1555,13 @@ __metadata:
   version: 3.1.3
   resolution: "csstype@npm:3.1.3"
   checksum: 10c0/80c089d6f7e0c5b2bd83cf0539ab41474198579584fa10d86d0cafe0642202343cbc119e076a0b1aece191989477081415d66c9fefbf3c957fc2fc4b7009f248
+  languageName: node
+  linkType: hard
+
+"daemon@npm:>=0.3.0":
+  version: 1.1.0
+  resolution: "daemon@npm:1.1.0"
+  checksum: 10c0/510b0090188d43723a8904c03d119a4a0c303488a412bef84d124ee830732a5f0147d0b136faa5a55707d01cfa5359f485282bf0f1fa2238ce5e33a2c521fc14
   languageName: node
   linkType: hard
 
@@ -2495,6 +2509,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"init@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "init@npm:0.1.2"
+  dependencies:
+    daemon: "npm:>=0.3.0"
+  checksum: 10c0/b96682d60b927e3c8006f33f9f2022629a3942dbcda7fc51d83009c21718de80445ce809c34c2f1356c69a5f80c01cfda878a4388a5d02e22f7b2ffc75ab2677
+  languageName: node
+  linkType: hard
+
 "internal-slot@npm:^1.1.0":
   version: 1.1.0
   resolution: "internal-slot@npm:1.1.0"
@@ -3063,6 +3086,15 @@ __metadata:
   dependencies:
     steno: "npm:^4.0.2"
   checksum: 10c0/d61f554d6a507419772b07c91982bb72a0d3976dddef83e1d58fb24ff9049398962ec2c1917b3a863aedb46559081e0cd208d032ff3c43b1d59f41be9f4f4022
+  languageName: node
+  linkType: hard
+
+"lucide-react@npm:^0.488.0":
+  version: 0.488.0
+  resolution: "lucide-react@npm:0.488.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10c0/076eab8084a2febdab792cfd9511702643d6af506f7b46e7be2997ccc3a8f5a9c95b03f8e9dcecfbb75822811ff7d425b90aa6d0cf3d86b9994a18ca4d45a146
   languageName: node
   linkType: hard
 
@@ -3713,6 +3745,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"shadcn-ui@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "shadcn-ui@npm:0.9.5"
+  dependencies:
+    chalk: "npm:^5.4.1"
+  bin:
+    shadcn-ui: dist/index.js
+  checksum: 10c0/e9b11edaf7f06accfd1093c77510af89014043b4fc807619fb077eea170f46174b705946866ea243d460433772bfe32b6b96058e5b02715dc0f083116273b71d
+  languageName: node
+  linkType: hard
+
 "sharp@npm:^0.34.1":
   version: 0.34.1
   resolution: "sharp@npm:0.34.1"
@@ -4032,6 +4075,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tailwind-merge@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "tailwind-merge@npm:3.2.0"
+  checksum: 10c0/294f6c2db0df74405bff126107107426c3126a70a1717d78e8d6811db65546c9bb3d61282bdb8d9fbded23f6bc8ec3e8e61031a4f53265f90b7f3dba558f88f4
+  languageName: node
+  linkType: hard
+
 "tailwindcss@npm:4.1.4, tailwindcss@npm:^4":
   version: 4.1.4
   resolution: "tailwindcss@npm:4.1.4"
@@ -4076,12 +4126,17 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^19"
     "@types/react-dom": "npm:^19"
+    clsx: "npm:^2.1.1"
     eslint: "npm:^9"
     eslint-config-next: "npm:15.3.0"
+    init: "npm:^0.1.2"
     json-server: "npm:^1.0.0-beta.3"
+    lucide-react: "npm:^0.488.0"
     next: "npm:15.3.0"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
+    shadcn-ui: "npm:^0.9.5"
+    tailwind-merge: "npm:^3.2.0"
     tailwindcss: "npm:^4"
     typescript: "npm:^5.8.3"
   languageName: unknown
