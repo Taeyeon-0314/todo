@@ -7,7 +7,7 @@
 | ![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black) | ![Next.js](https://img.shields.io/badge/Next.js%2015-000000?style=for-the-badge&logo=next.js&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) |
 
 ### Styling
-| Tailwind CSS                          |Tailwind Merge                          |
+| Tailwind CSS                          | Tailwind Merge                          |
 |---------------------------------------|---------------------------------------|
 | ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Tailwind Merge](https://img.shields.io/badge/Tailwind%20Merge-06B6D4?style=for-the-badge&logo=Tailwind-Merge&logoColor=white) |
 
@@ -41,9 +41,9 @@
 | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) |
 
 ### Deployment & Hosting
-| Vercel                                |
-|---------------------------------------|
-| ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) |
+| Vercel                                | Glitch                                |
+|---------------------------------------|---------------------------------------|
+| ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white) |![glitch](https://img.shields.io/badge/glitch-3333FF?style=for-the-badge&logo=glitch&logoColor=white) |
 
 ## ✨ 주요 기능
 
